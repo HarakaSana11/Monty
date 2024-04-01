@@ -1,18 +1,11 @@
 #ifndef MONTY_H
 #define MONTY_H
 #include <stdio.h>
-<<<<<<< HEAD
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
-=======
-#include <fcntl.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
->>>>>>> 62ca17cc07f11883d375f28d2607bbecab2b5435
 #include <ctype.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -29,7 +22,6 @@ typedef struct stack_s
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
-<<<<<<< HEAD
 /**
  * struct bus_s - variables -args, file, line content
  * @arg: value
@@ -48,11 +40,6 @@ typedef struct bus_s
 extern bus_t bus;
 /**
  * struct instruction_s - opcode and its function
-=======
-
-/**
- * struct instruction_s - opcoode and its function
->>>>>>> 62ca17cc07f11883d375f28d2607bbecab2b5435
  * @opcode: the opcode
  * @f: function to handle the opcode
  *
@@ -64,7 +51,6 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-<<<<<<< HEAD
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
@@ -89,23 +75,4 @@ void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
-=======
-
-void _pint(stack_t **head, unsigned int line_num);
-void _pall(stack_t **head, unsigned int i __attribute__ ((unused)));
-void _push(stack_t **head, unsigned int line_num __attribute__ ((unused)));
-void _pop(stack_t **head, unsigned int line_num);
-void _swap(stack_t **head, unsigned int line_num);
-void _add(stack_t **head, unsigned int line_num);
-void _sub(stack_t **head, unsigned int line_num);
-void _nop(stack_t **head, unsigned int i);
-void _div(stack_t **head, unsigned int line_num);
-void _mul(stack_t **head, unsigned int line_num);
-void _mod(stack_t **head, unsigned int line_num);
-void _free(stack_t *head);
-int _isdigit(char *str);
-void _pchar(stack_t **head, unsigned int line_num);
-void _pstr(stack_t **head, unsigned int i __attribute__ ((unused)));
-extern char *tokennum;
->>>>>>> 62ca17cc07f11883d375f28d2607bbecab2b5435
 #endif

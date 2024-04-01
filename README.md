@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Monty
 
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
@@ -78,7 +77,3 @@ Available operation codes:
 |rotr   | Rotates the bottom of the stack to the top of the stack.|
 |stack  | This is the default behavior. Sets the format of the data into a stack (LIFO).|
 |queue  | Sets the format of the data into a queue (FIFO).|
-=======
- REad this
-
->>>>>>> 62ca17cc07f11883d375f28d2607bbecab2b5435
